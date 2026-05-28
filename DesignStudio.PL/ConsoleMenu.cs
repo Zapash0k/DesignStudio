@@ -131,12 +131,11 @@ namespace DesignStudio.UI
             Console.Write("Назва: "); var title = Console.ReadLine()!;
             Console.Write("Опис: "); var desc = Console.ReadLine()!;
             Console.Write("Категорія: "); var cat = Console.ReadLine()!;
-            Console.Write("URL зображення: "); var url = Console.ReadLine()!;
             Console.Write("ID замовлення (або пусто): ");
             var rawId = Console.ReadLine();
             int? orderId = string.IsNullOrWhiteSpace(rawId) ? null : int.Parse(rawId);
 
-            await _portfolioService.AddPortfolioItemAsync(title, desc, cat, url, orderId);
+            await _portfolioService.AddPortfolioItemAsync(title, desc, cat, orderId);
             Console.WriteLine("Роботу додано до портфоліо.");
         }
 

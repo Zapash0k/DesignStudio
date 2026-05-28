@@ -7,6 +7,6 @@ namespace DesignStudio.BLL.Interfaces
         Task<IEnumerable<PortfolioItemModel>> GetAllAsync();
         Task<IEnumerable<PortfolioItemModel>> GetByCategoryAsync(string category);
         Task AddPortfolioItemAsync(string title, string description,
-                                  string category, string imageUrl, int? orderId);
+                                  string category, int? orderId);
     }
 }

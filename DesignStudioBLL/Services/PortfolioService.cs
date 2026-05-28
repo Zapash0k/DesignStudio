@@ -25,7 +25,7 @@ namespace DesignStudio.BLL.Services
         }
 
         public async Task AddPortfolioItemAsync(string title, string description,
-            string category, string imageUrl, int? orderId)
+            string category, int? orderId)
         {
             if (string.IsNullOrWhiteSpace(title))
                 throw new ArgumentException("Назва обов'язкова.");

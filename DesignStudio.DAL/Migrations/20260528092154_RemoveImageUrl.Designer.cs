@@ -3,6 +3,7 @@ using System;
 using DesignStudio.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DesignStudio.DAL.Migrations
 {
     [DbContext(typeof(DesignStudioContext))]
-    partial class DesignStudioContextModelSnapshot : ModelSnapshot
+    [Migration("20260528092154_RemoveImageUrl")]
+    partial class RemoveImageUrl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
