@@ -19,9 +19,9 @@ namespace DesignStudio.DAL
 
             var portfolioItems = new[]
             {
-                new PortfolioItem { Title = "Сайт для кав'ярні «Зерно»", Category = "Web",      CompletedAt = DateTime.UtcNow.AddMonths(-3), Description = "Мінімалістичний веб-сайт", ImageUrl = "grain-cafe.jpg" },
-                new PortfolioItem { Title = "Інтер'єр офісу TechCorp",   Category = "Interior", CompletedAt = DateTime.UtcNow.AddMonths(-1), Description = "Сучасний open-space",       ImageUrl = "techcorp.jpg" },
-                new PortfolioItem { Title = "Фірмовий стиль «Maple»",    Category = "Branding", CompletedAt = DateTime.UtcNow.AddMonths(-2), Description = "Повний брендинг стартапу",  ImageUrl = "maple.jpg" },
+                new PortfolioItem { Title = "Сайт для кав'ярні «Зерно»", Category = "Web",      CompletedAt = DateTime.UtcNow.AddMonths(-3), Description = "Мінімалістичний веб-сайт" },
+                new PortfolioItem { Title = "Інтер'єр офісу TechCorp",   Category = "Interior", CompletedAt = DateTime.UtcNow.AddMonths(-1), Description = "Сучасний open-space" },
+                new PortfolioItem { Title = "Фірмовий стиль «Maple»",    Category = "Branding", CompletedAt = DateTime.UtcNow.AddMonths(-2), Description = "Повний брендинг стартапу" },
             };
             context.PortfolioItems.AddRange(portfolioItems);
 

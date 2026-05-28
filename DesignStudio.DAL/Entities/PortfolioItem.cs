@@ -7,7 +7,6 @@
         public string Description { get; set; }
         public string Category { get; set; }
         public DateTime CompletedAt { get; set; }
-        public string ImageUrl { get; set; }
 
         public int? OrderId { get; set; }
         public Order Order { get; set; }

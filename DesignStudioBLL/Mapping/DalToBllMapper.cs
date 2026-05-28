@@ -44,7 +44,6 @@ namespace DesignStudio.BLL.Mapping
             Description = p.Description,
             Category = p.Category,
             CompletedAt = p.CompletedAt,
-            ImageUrl = p.ImageUrl,
             OrderId = p.OrderId
         };
     }

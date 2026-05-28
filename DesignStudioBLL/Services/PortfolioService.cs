@@ -35,7 +35,6 @@ namespace DesignStudio.BLL.Services
                 Title = title,
                 Description = description,
                 Category = category,
-                ImageUrl = imageUrl,
                 OrderId = orderId,
                 CompletedAt = DateTime.UtcNow
             };
